@@ -1,0 +1,25 @@
+@mixin big-header {
+    font-family: "Poppins-SemiBold", sans-serif;
+    font-size: 36px;
+    margin: 0;
+}
+@mixin header {
+    font-family: "Poppins-SemiBold", sans-serif;
+    font-size: 28px;
+    margin: 0;
+}
+@mixin sub-header {
+    font-family: "Poppins-Medium", sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+@mixin body {
+    font-family: "Poppins-Regular", sans-serif;
+    font-size: 12px;
+    margin: 0;
+}
+@mixin caption {
+    font-family: "Poppins-Regular", sans-serif;
+    font-size: 10px;
+    margin: 0;
+}

@@ -1,0 +1,75 @@
+$primary: #db2a4e;
+
+$milk: #ffffff;
+$milkshakeOreo: #828282;
+$milkshakeOreoLight: #bdbdbd;
+
+$softVanilla: #f5f5f5;
+$snow: #e0e0e0;
+
+$mint: #20c550;
+$chili: #fb4646;
+$pepsi: #5f8ce9;
+$cheese: #ffaa47;
+
+$greentea: #3af471;
+$greenteaSoft: #95f0bb;
+$greenteaDark: #1ade6c;
+$greenteaNatural: #1cbd5f;
+
+$strawberry: #fb4646;
+$strawberrySoft: #f5a7a7;
+$strawberryDark: #f74343;
+$strawberryNatural: #e22f2f;
+
+$pocari: #235acc;
+$pocariSoft: #6c95ea;
+$pocariDark: #0d3589;
+$pocariNatural: #588cf8;
+
+$rawon: #222222;
+
+// background
+$mintBackground: #e3ffea;
+$chiliBackground: #fff4ec;
+$pepsiBackground: #eef2fa;
+$cheeseBackground: #fff6e6;
+
+:export {
+  primary: $primary;
+
+  milk: $milk;
+  milkshakeOreo: $milkshakeOreo;
+  milkshakeOreoLight: $milkshakeOreoLight;
+
+  softVanilla: $softVanilla;
+  snow: $snow;
+
+  mint: $mint;
+  chili: $chili;
+  pepsi: $pepsi;
+  cheese: $cheese;
+
+  greentea: $greentea;
+  greenteaSoft: $greenteaSoft;
+  greenteaDark: $greenteaDark;
+  greenteaNatural: $greenteaNatural;
+
+  strawberry: $strawberry;
+  strawberrySoft: $strawberrySoft;
+  strawberryDark: $strawberryDark;
+  strawberryNatural: $strawberryNatural;
+
+  pocari: $pocari;
+  pocariSoft: $pocariSoft;
+  pocariDark: $pocariDark;
+  pocariNatural: $pocariNatural;
+
+  rawon: $rawon;
+
+  // background
+  mintBackground: $mintBackground;
+  chiliBackground: $chiliBackground;
+  pepsiBackground: $pepsiBackground;
+  cheeseBackground: $cheeseBackground;
+}
