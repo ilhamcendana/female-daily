@@ -1,20 +1,23 @@
 import React from 'react';
 import styles from './style.module.scss';
 
-const Button = ({ variant, justIcon, rounded, size, style, leftIcon, rightIcon, children }) => {
+const Button = (props) => {
+    const { variant, justicon, rounded, size, style, lefticon, righticon, children, isDisabled } = props;
     return (
         <button
-            className={`${styles.button} ${styles[variant]} ${justIcon && styles.justIcon} ${styles[size]}`}
+            className={`${styles.button} ${styles[variant]} ${justicon && styles.justicon} ${styles[size]} ${isDisabled && styles.disabled}`}
             style={{
                 borderRadius: rounded ? 20 : 0,
                 ...style
             }}
+            disabled={isDisabled}
+            {...props}
         >
-            {leftIcon && leftIcon}
-            <div style={{ marginLeft: leftIcon ? 8 : 0, marginRight: rightIcon ? 8 : 0 }}>
-                {justIcon || children}
+            {lefticon && lefticon}
+            <div style={{ marginLeft: lefticon ? 8 : 0, marginRight: righticon ? 8 : 0 }}>
+                {justicon || children}
             </div>
-            {rightIcon && rightIcon}
+            {righticon && righticon}
         </button>
     );
 }

@@ -1,0 +1,318 @@
+@import "../../styles/color_palette.module.scss";
+@import "../../styles/typographies.module.scss";
+
+.editorCard {
+    width: 200px;
+    height: 300px;
+    border: 1px solid $milkshakeOreoLight;
+    border-radius: 14px;
+    position: relative;
+
+    .editorProfile {
+        position: absolute;
+        display: flex;
+        align-items: flex-start;
+        top: -45px;
+        div {
+            &:nth-child(1) {
+                width: 55px;
+                height: 55px;
+                background-color: $milkshakeOreo;
+                border-radius: 27.5px;
+                margin-right: 10px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 60px;
+                }
+            }
+
+            p {
+                &:nth-child(1) {
+                    @include sub-header;
+                }
+                &:nth-child(2) {
+                    @include caption;
+                    color: $milkshakeOreo;
+                }
+            }
+        }
+    }
+
+    .productImage {
+        width: 100%;
+        border-top-left-radius: 14px;
+        border-top-right-radius: 14px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .productRating {
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+        box-sizing: border-box;
+        margin-top: 10px;
+
+        p {
+            &:nth-child(1) {
+                @include sub-header;
+                margin-right: 8px;
+            }
+            &:nth-child(3) {
+                @include body;
+                margin-left: 8px;
+            }
+        }
+    }
+
+    .productName {
+        padding: 0 16px;
+        box-sizing: border-box;
+        margin-top: 10px;
+
+        p {
+            &:nth-child(1) {
+                @include sub-header;
+            }
+            &:nth-child(2) {
+                @include body;
+            }
+        }
+    }
+}
+
+.productCard {
+    width: 200px;
+    height: 350px;
+    background-color: $milk;
+    border-radius: 14px;
+    position: relative;
+    overflow: hidden;
+
+    .productImage {
+        width: 100%;
+        // height: 200px;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .idk {
+        padding: 12px;
+        box-sizing: border-box;
+        color: $primary;
+        @include sub-header;
+    }
+    .productRating {
+        padding: 0 12px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+
+        p {
+            &:nth-child(1) {
+                @include sub-header;
+                color: $rawon;
+                margin-right: 8px;
+            }
+        }
+    }
+    .productInfo {
+        padding: 0 12px 0 12px;
+        box-sizing: border-box;
+        margin-top: 12px;
+
+        p {
+            &:nth-child(1) {
+                @include sub-header;
+            }
+            &:nth-child(2) {
+                @include body;
+            }
+            &:nth-child(3) {
+                @include caption;
+                color: $milkshakeOreo;
+            }
+        }
+    }
+}
+
+.articleCard {
+    width: 340px;
+    height: 340px;
+    margin-bottom: 20px;
+
+    div {
+        width: 100%;
+        height: 210px;
+        border-radius: 24px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 210px;
+        }
+    }
+
+    h3 {
+        @include sub-header;
+        margin: 16px 0;
+    }
+
+    p {
+        @include body;
+        color: $milkshakeOreo;
+    }
+}
+
+.reviewCard {
+    border: 1px solid $snow;
+    width: 340px;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+
+    .topSection {
+        display: flex;
+        align-items: flex-start;
+        border-bottom: 1px solid $snow;
+        margin-bottom: 16px;
+        div {
+            &:nth-child(1) {
+                width: 80px;
+
+                img {
+                    width: 100%;
+                }
+            }
+            &:nth-child(2) {
+                p {
+                    &:nth-child(1) {
+                        @include sub-header;
+                    }
+                    &:nth-child(2) {
+                        @include body;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottomSection {
+        div {
+            &:nth-child(1) {
+                margin-bottom: 12px;
+                &:nth-child(1) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    div {
+                        margin: 0;
+                    }
+                    p {
+                        @include caption;
+                        color: $milkshakeOreo;
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                p {
+                    @include body;
+                    color: $rawon;
+
+                    span {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    .author {
+        position: absolute;
+        bottom: -75px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 50px;
+            }
+        }
+
+        p {
+            &:nth-child(2) {
+                @include body;
+                margin: 8px 0 4px 0;
+            }
+            &:nth-child(3) {
+                @include caption;
+                color: $milkshakeOreoLight;
+            }
+        }
+    }
+}
+
+.groupTalkCard {
+    background-color: $milk;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px 20px 35px 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px; 
+    width: 250px;   
+
+    div {
+        &:nth-child(1) {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &:nth-child(2) {
+            p {
+                @include header;
+                font-size: 20px;
+                margin: 20px 0;
+                text-align: center;
+            }
+        }
+        &:nth-child(3) {
+            div {
+                width: 100%;
+                border-radius: 0;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 12px;
+            }
+            p {
+                @include sub-header;
+                color: $milkshakeOreo;
+                text-align: center;
+            }
+        }
+    }
+}

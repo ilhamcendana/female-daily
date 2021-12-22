@@ -1,0 +1,94 @@
+@import "../../styles/color_palette.module.scss";
+@import "../../styles/typographies.module.scss";
+
+.navbar {
+    min-width: 1440px;
+    top: 0;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: $milk;   
+    z-index: 1000; 
+
+    .topNavbar {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;        
+        padding-left: 16px;
+
+        .navBtnLogoContainer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 15%;
+
+            img {
+                cursor: pointer;
+            }
+        }
+
+        .searchContainer {
+            display: flex;
+            align-items: center;
+            border: 1px solid $snow;
+            border-radius: 5px;
+            box-sizing: border-box;
+            height: 40px;
+            position: relative;
+            min-width: 970px;
+
+            .searchIcon {
+                position: absolute;
+                left: 10px;
+                color: $milkshakeOreo;
+            }
+
+            input {
+                border: none;
+                padding-left: 40px;
+                box-sizing: border-box;
+                height: 100%;
+                width: 100%;
+                transition: 0.3s;
+
+                &::placeholder {
+                    color: $milkshakeOreo;
+                }
+
+                &:focus {
+                    outline-color: $primary;
+                    outline-width: 1px;
+                }
+            }
+        }
+    }
+
+    .bottomNavbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid $snow;        
+        border-bottom: 1px solid $snow;            
+
+        div {
+            padding:14px;
+            box-sizing: border-box;
+
+            a {
+                text-decoration: none;
+                color: $rawon;
+                @include sub-header;
+                font-weight: bold;
+                margin:0 20px;
+                transition: .3s;
+
+                &:hover {
+                    color:$primary;
+                }
+            }
+        }
+    }
+}

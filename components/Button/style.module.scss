@@ -1,0 +1,66 @@
+@import '../../styles/color_palette.module.scss';
+@import '../../styles/typographies.module.scss';
+
+.button {
+    background-color: $primary;    
+    border:none;
+    color: $milk;
+    padding:10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: .3s;   
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    @include sub-header;
+
+    &:hover {
+        opacity: .8;
+    }
+    &:active {        
+        opacity: .7;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.ghost {
+    background-color: transparent;
+    color: $primary;
+}
+
+.justicon {
+    color: $rawon;
+}
+
+.disabled {
+    opacity: .4;
+    cursor: initial;
+    &:hover {
+        opacity: .4;
+    }
+    &:active {        
+        opacity: .4;
+    }
+}
+
+//size 
+.xs {
+    width: 100px;
+}
+.sm {
+    width: 140px;
+}
+.md {
+    width: 180px;
+}
+.lg {
+    width: 220px;
+}
+.xl {
+    width: 260px;
+}
+.full {
+    width: 100%;
+}

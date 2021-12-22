@@ -1,0 +1,44 @@
+@import "../../styles/color_palette.module.scss";
+
+.caraousel {
+    position: relative;
+    .articles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navContainer {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        position: absolute;        
+
+        button {
+            color: $primary;
+        }
+
+        .dotContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .dot {
+                width: 8px;
+                height: 8px;
+                margin: 0 10px;
+                border-radius: 50%;
+                background-color: $primary;
+                transition: 0.3s;
+            }
+
+            .dotActive {
+                opacity: 1;
+            }
+            .dotUnactive {
+                opacity: 0.4;
+            }
+        }
+    }
+}

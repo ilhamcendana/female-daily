@@ -1,0 +1,1 @@
+export const ENDPOINT='https://virtserver.swaggerhub.com/hqms/FDN-WP/0.1/wp'

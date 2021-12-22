@@ -35,8 +35,12 @@ $chiliBackground: #fff4ec;
 $pepsiBackground: #eef2fa;
 $cheeseBackground: #fff6e6;
 
+$pinky:#fdd9e0;
+
 :export {
   primary: $primary;
+
+  pinky:$pinky;
 
   milk: $milk;
   milkshakeOreo: $milkshakeOreo;
